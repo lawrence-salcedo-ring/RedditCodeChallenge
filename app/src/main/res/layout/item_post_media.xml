@@ -63,6 +63,7 @@
             android:layout_height="@dimen/post_image_size"
             android:layout_marginTop="@dimen/standard_margin"
             android:scaleType="centerCrop"
+            app:imageUrl="@{post.thumbnailUrl}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/author"
             tools:src="@mipmap/ic_launcher" />

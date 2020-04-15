@@ -26,6 +26,6 @@ data class RedditChildData(
     val date: Long,
     @SerializedName("thumbnail")
     val thumbnailUrl: String,
-    @SerializedName("maybe_something_is_wrong_here")
+    @SerializedName("num_comments")
     var commentQty: Int = 0
 )

@@ -48,6 +48,7 @@ class MainFragment : Fragment(), PostAdapter.OnClickListener {
         super.onViewCreated(view, savedInstanceState)
         _navController = Navigation.findNavController(view)
         _binding.mainRecyclerView.apply {
+            layoutManager = LinearLayoutManager(context)
             adapter = _adapter
             val dividerItemDecoration = DividerItemDecoration(
                 context,
